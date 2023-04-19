@@ -1,0 +1,48 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  font-family: Roboto, sans-serif;
+}
+
+.sidebar {
+  padding-left: 2rem;
+  width: 20%;
+  height: 100%;
+  box-shadow: 2px 0 10px 2px #0000004d;
+}
+
+.parent {
+    margin: 2rem 0;
+}
+
+.fields {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.fields > p {
+  margin-bottom: 0;
+}
+
+.list {
+  padding-left: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.main {
+  padding: 0 2rem;
+}
