@@ -15,14 +15,20 @@ body {
 }
 
 .sidebar {
-  padding-left: 2rem;
+  /* padding: 2rem 0 0 2rem; */
+  padding: 0 2rem;
   width: 20%;
   height: 100%;
   box-shadow: 2px 0 10px 2px #0000004d;
 }
 
+.profileImg {
+  width: 70%;
+  border-radius: 50%;
+}
+
 .parent {
-    margin: 2rem 0;
+  margin: 2rem 0;
 }
 
 .fields {
@@ -31,7 +37,7 @@ body {
   font-size: 15px;
 }
 
-.fields > p {
+.fields>p {
   margin-bottom: 0;
 }
 
@@ -44,5 +50,30 @@ ul {
 }
 
 .main {
-  padding: 0 2rem;
+  padding: 1rem 2rem 0;
+  max-height: 667px;
+  /* overflow-y: scroll; */
+}
+
+.infos:first-child {
+  border: none;
+}
+
+.infos {
+  border-top: 1px solid #00000027;
+  margin-bottom: 1rem;
+}
+
+.infos span {
+  display: flex;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.infos>span>p {
+  margin-right: 5px;
+}
+
+.infos p {
+  margin: 0;
 }
