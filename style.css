@@ -11,57 +11,63 @@ h2 {
   margin: 0;
 }
 
+a {
+  color: #000;
+  outline: none;
+}
+
 body {
   display: flex;
   font-family: Roboto, sans-serif;
 }
 
 .sidebar {
-  padding: 2rem 2rem 0;
+  padding: 2rem 2.5rem 0;
   width: 20%;
-  max-height: 799px;
   box-shadow: 2px 0 10px 2px #0000004d;
-}
-
-.profileImgContainer {
-  display: flex;
-  justify-content: center;
+  background-color: #303030;
+  color: #fff;
 }
 
 .profileImg {
-  width: 80%;
+  width: 65%;
   border-radius: 50%;
 }
 
-.parent {
+.profileInfoContainer {
   margin: 2rem 0;
 }
 
-.fields {
+.info {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   font-size: 15px;
+  margin-top: 10px;
 }
 
-.fields > p {
-  margin-bottom: 0;
+.info :first-child {
+  font-size: 16px;
+  font-weight: 600;
+  padding-right: 6px;
+  color: #fff;
 }
 
-.fields > a {
-  margin-top: 15px;
+.info > p {
+  margin: 0;
+  color: #ffffff80;
+}
+
+.info > a {
+  color: #ffffff80;
   overflow-x: hidden;
   white-space: pre;
   text-overflow: ellipsis;
+  text-decoration: none;
 }
 
-.teste {
-  font-weight: 900;
-  margin-right: 6px;
-}
-
-.teste2 {
-  font-size: 14px;
-  color: #666666cf;
+.info > a:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 
 .list {
@@ -70,6 +76,7 @@ body {
 
 ul {
   list-style-type: none;
+  color: #ffffff80;
 }
 
 .main {
@@ -77,38 +84,47 @@ ul {
   flex-direction: column;
   padding: 2rem 2rem 0;
   overflow-y: auto;
-  max-height: 799px;
 }
 
 .mainInfos {
   margin-top: 2rem;
 }
 
-.infos:first-child {
+.experienceInfosContainer > :first-child {
   border: none;
 }
 
-.infos {
-  border-top: 1px solid #00000027;
+.experience {
+  border-top: 1px solid #00000038;
   margin-bottom: 1rem;
 }
 
-.infos span {
+.experience span {
   display: flex;
   margin-top: 1rem;
 }
 
-.infos > span :first-child {
+.experience > span :first-child {
   margin-right: 5px;
   font-weight: 600;
 }
 
-.infos p {
+.experience p {
   margin: 0;
+}
+
+.experience > a {
+  display: block;
+  margin-top: 1rem;
 }
 
 .divider {
   display: block;
   border-bottom: 2px solid;
   margin: 1.5rem 0;
+}
+
+.periodOfTime {
+  font-size: 14px;
+  color: #666666cf;
 }
